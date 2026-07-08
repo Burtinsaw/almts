@@ -49,8 +49,14 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="hero">
-    <canvas class="hero__sparks" id="sparks" aria-hidden="true"></canvas>
-    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__media" aria-hidden="true">
+      <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
+        <source src="assets/hero-sparks.webm" type="video/webm" />
+        <source src="assets/hero-sparks.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__grid"></div>
+      <div class="hero__scrim"></div>
+    </div>
     <div class="wrap hero__inner">
       <p class="eyebrow" data-i18n="hero.eyebrow">İTHALAT &amp; TİCARET · EST. HAMMADDE</p>
       <h1 class="hero__title">
