@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALÜMTAŞ METAL — Alüminyum, SiC ve Endüstriyel Hammadde İthalatı</title>
+  <meta name="description" content="ALÜMTAŞ METAL Limited Şirketi — alüminyum, silisyum karbür (SiC) ve endüstriyel hammaddelerin ithalat ve satışında güvenilir çözüm ortağınız." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#hero" class="brand" aria-label="ALÜMTAŞ METAL">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 Z" fill="none" stroke="url(#g)" stroke-width="1.6"/>
+          <path d="M16 9 L23 13 V21 L16 25 L9 21 V13 Z" fill="url(#g)" opacity="0.9"/>
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#FFB627"/>
+              <stop offset="0.55" stop-color="#FF4D0A"/>
+              <stop offset="1" stop-color="#C41E0A"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand__text">ALÜMTAŞ<span class="brand__sub">METAL</span></span>
+      </a>
+
+      <nav class="nav__links" id="menu">
+        <a href="#about" data-i18n="nav.about">Hakkımızda</a>
+        <a href="#products" data-i18n="nav.products">Ürünler</a>
+        <a href="#why" data-i18n="nav.why">Neden Biz</a>
+        <a href="#contact" data-i18n="nav.contact">İletişim</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="lang" id="langBtn" aria-label="Dil / Language">
+          <span class="lang__on">TR</span><span class="lang__sep">/</span><span class="lang__off">EN</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <canvas class="hero__sparks" id="sparks" aria-hidden="true"></canvas>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <p class="eyebrow" data-i18n="hero.eyebrow">İTHALAT &amp; TİCARET · EST. HAMMADDE</p>
+      <h1 class="hero__title">
+        <span data-i18n="hero.title1">Hammaddede</span>
+        <span class="hot" data-i18n="hero.title2">güvenilir</span>
+        <span data-i18n="hero.title3">çözüm ortağınız</span>
+      </h1>
+      <p class="hero__lead" data-i18n="hero.lead">
+        Alüminyum, silisyum karbür ve endüstriyel hammaddeleri dünya genelindeki
+        tedarik ağımızla üretiminize kesintisiz ulaştırıyoruz.
+      </p>
+      <div class="hero__cta">
+        <a href="#products" class="btn btn--hot" data-i18n="hero.ctaPrimary">Ürünlerimiz</a>
+        <a href="#contact" class="btn btn--ghost" data-i18n="hero.ctaSecondary">Teklif Alın</a>
+      </div>
+
+      <dl class="hero__readout" aria-hidden="true">
+        <div><dt>AL</dt><dd>660°C<span data-i18n="hero.melt">erime</span></dd></div>
+        <div><dt>SiC</dt><dd>2730°C<span data-i18n="hero.melt">erime</span></dd></div>
+        <div><dt>PURITY</dt><dd>99.7%<span data-i18n="hero.grade">tipik</span></dd></div>
+      </dl>
+    </div>
+    <a href="#stats" class="hero__scroll" aria-label="Aşağı kaydır">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats" id="stats">
+    <div class="wrap stats__grid">
+      <div class="stat reveal">
+        <span class="stat__num" data-count="20" data-suffix="+">0</span>
+        <span class="stat__label" data-i18n="stats.countries">Tedarik Ülkesi</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-count="15000" data-suffix="+">0</span>
+        <span class="stat__label" data-i18n="stats.tonnage">Ton / Yıl Kapasite</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-count="12" data-suffix="">0</span>
+        <span class="stat__label" data-i18n="stats.materials">Hammadde Grubu</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-count="100" data-suffix="%">0</span>
+        <span class="stat__label" data-i18n="stats.quality">Kalite Kontrol</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap about__grid">
+      <div class="about__text reveal">
+        <p class="eyebrow" data-i18n="about.eyebrow">// HAKKIMIZDA</p>
+        <h2 class="h2" data-i18n="about.title">Üretimin ilk halkasında güç ve süreklilik</h2>
+        <p data-i18n="about.p1">
+          ALÜMTAŞ METAL Limited Şirketi, alüminyum ve silisyum karbür başta olmak
+          üzere endüstriyel hammaddelerin ithalatı ve yurt içi satışında faaliyet
+          göstermektedir. Metalurji, döküm ve aşındırıcı sektörlerine düzenli,
+          izlenebilir ve dünya standartlarında malzeme tedarik ediyoruz.
+        </p>
+        <p data-i18n="about.p2">
+          Doğru kaynaktan doğru spesifikasyonu bulmak bizim işimiz. Uzun soluklu
+          tedarikçi ilişkilerimiz ve lojistik disiplinimiz sayesinde fiyatı ve
+          teslim süresini birlikte optimize ediyoruz.
+        </p>
+        <div class="about__values">
+          <div class="value">
+            <h3 data-i18n="about.mission.t">Misyon</h3>
+            <p data-i18n="about.mission.d">Üreticinin hammadde tedarikini kesintisiz, şeffaf ve rekabetçi kılmak.</p>
+          </div>
+          <div class="value">
+            <h3 data-i18n="about.vision.t">Vizyon</h3>
+            <p data-i18n="about.vision.d">Bölgenin en güvenilir endüstriyel hammadde ticaret markası olmak.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__figure reveal" aria-hidden="true">
+        <svg class="ingot-svg" viewBox="-110 -80 340 230" role="img">
+          <defs>
+            <linearGradient id="alTop" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#efece5"/><stop offset="1" stop-color="#b7b4ac"/>
+            </linearGradient>
+            <linearGradient id="alLong" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#9a978f"/><stop offset="1" stop-color="#6a6862"/>
+            </linearGradient>
+            <linearGradient id="alShort" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#67655f"/><stop offset="1" stop-color="#413f3b"/>
+            </linearGradient>
+            <radialGradient id="molten" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#ff7a1a" stop-opacity="0.55"/>
+              <stop offset="0.5" stop-color="#ff4d0a" stop-opacity="0.18"/>
+              <stop offset="1" stop-color="#ff4d0a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="20" cy="102" rx="150" ry="46" fill="url(#molten)"/>
+          <!-- ingot solid -->
+          <path d="M0 -46 L120 10 L40 48 L-80 -8 Z" fill="url(#alTop)"/>
+          <path d="M-80 38 L40 94 L40 48 L-80 -8 Z" fill="url(#alLong)"/>
+          <path d="M120 56 L40 94 L40 48 L120 10 Z" fill="url(#alShort)"/>
+          <!-- bright top edge -->
+          <path d="M0 -46 L120 10" stroke="#fff" stroke-opacity="0.5" stroke-width="1.2" fill="none"/>
+          <path d="M0 -46 L-80 -8" stroke="#fff" stroke-opacity="0.3" stroke-width="1.2" fill="none"/>
+          <text x="-26" y="34" transform="rotate(25 -26 34)" fill="#2a2824"
+                font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="1">Al 99.7</text>
+        </svg>
+        <div class="about__note">
+          <span class="mono">LOT / TRACE</span>
+          <span data-i18n="about.trace">Her sevkiyat menşe ve analiz sertifikası ile</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="products" id="products">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="products.eyebrow">// ÜRÜN PORTFÖYÜ</p>
+        <h2 class="h2" data-i18n="products.title">İşlediğiniz her metal için hammadde</h2>
+      </div>
+
+      <div class="cards">
+        <!-- Alüminyum -->
+        <article class="card reveal">
+          <header class="card__head">
+            <span class="card__sym">Al</span>
+            <span class="card__mp mono">MP 660°C</span>
+          </header>
+          <h3 class="card__title" data-i18n="prod.al.t">Alüminyum</h3>
+          <p class="card__desc" data-i18n="prod.al.d">Külçe, ingot, biyet ve alaşımlar. Döküm ve ekstrüzyon için tipik saflık %99,7.</p>
+          <ul class="card__specs mono">
+            <li data-i18n="prod.al.s1">Külçe / T-bar</li>
+            <li data-i18n="prod.al.s2">Ekstrüzyon biyeti</li>
+            <li data-i18n="prod.al.s3">Döküm alaşımları</li>
+          </ul>
+          <a href="#contact" class="card__link" data-i18n="prod.cta">Teklif alın →</a>
+        </article>
+
+        <!-- SiC -->
+        <article class="card card--sic reveal">
+          <header class="card__head">
+            <span class="card__sym">SiC</span>
+            <span class="card__mp mono">MP 2730°C</span>
+          </header>
+          <h3 class="card__title" data-i18n="prod.sic.t">Silisyum Karbür</h3>
+          <p class="card__desc" data-i18n="prod.sic.d">Metalurjik ve aşındırıcı kalite. Deoksidasyon, refrakter ve zımpara uygulamaları.</p>
+          <ul class="card__specs mono">
+            <li data-i18n="prod.sic.s1">Metalurjik %88–98</li>
+            <li data-i18n="prod.sic.s2">Kesme / taşlama</li>
+            <li data-i18n="prod.sic.s3">Refrakter granül</li>
+          </ul>
+          <a href="#contact" class="card__link" data-i18n="prod.cta">Teklif alın →</a>
+        </article>
+
+        <!-- Ferro Alaşım -->
+        <article class="card reveal">
+          <header class="card__head">
+            <span class="card__sym">FeX</span>
+            <span class="card__mp mono">ALLOY</span>
+          </header>
+          <h3 class="card__title" data-i18n="prod.ferro.t">Ferro Alaşımlar</h3>
+          <p class="card__desc" data-i18n="prod.ferro.d">FeSi, FeMn, FeCr ve daha fazlası. Çelikhane ve döküm için katkı alaşımları.</p>
+          <ul class="card__specs mono">
+            <li data-i18n="prod.ferro.s1">Ferro Silisyum</li>
+            <li data-i18n="prod.ferro.s2">Ferro Mangan</li>
+            <li data-i18n="prod.ferro.s3">Ferro Krom</li>
+          </ul>
+          <a href="#contact" class="card__link" data-i18n="prod.cta">Teklif alın →</a>
+        </article>
+
+        <!-- Bakır & Çinko -->
+        <article class="card reveal">
+          <header class="card__head">
+            <span class="card__sym">Cu·Zn</span>
+            <span class="card__mp mono">MP 1085°C</span>
+          </header>
+          <h3 class="card__title" data-i18n="prod.cuzn.t">Bakır &amp; Çinko</h3>
+          <p class="card__desc" data-i18n="prod.cuzn.d">Katot bakır, pirinç hurdası ve çinko külçe. Döküm ve galvaniz için.</p>
+          <ul class="card__specs mono">
+            <li data-i18n="prod.cuzn.s1">Katot bakır</li>
+            <li data-i18n="prod.cuzn.s2">Çinko külçe SHG</li>
+            <li data-i18n="prod.cuzn.s3">Pirinç / bronz</li>
+          </ul>
+          <a href="#contact" class="card__link" data-i18n="prod.cta">Teklif alın →</a>
+        </article>
+
+        <!-- Magnezyum -->
+        <article class="card reveal">
+          <header class="card__head">
+            <span class="card__sym">Mg</span>
+            <span class="card__mp mono">MP 650°C</span>
+          </header>
+          <h3 class="card__title" data-i18n="prod.mg.t">Magnezyum</h3>
+          <p class="card__desc" data-i18n="prod.mg.d">Külçe ve alaşım. Alüminyum alaşımlama ve hafif metal döküm uygulamaları.</p>
+          <ul class="card__specs mono">
+            <li data-i18n="prod.mg.s1">Mg külçe %99,9</li>
+            <li data-i18n="prod.mg.s2">Alaşım katkısı</li>
+            <li data-i18n="prod.mg.s3">Granül / talaş</li>
+          </ul>
+          <a href="#contact" class="card__link" data-i18n="prod.cta">Teklif alın →</a>
+        </article>
+
+        <!-- Diğer -->
+        <article class="card reveal">
+          <header class="card__head">
+            <span class="card__sym">+</span>
+            <span class="card__mp mono">CUSTOM</span>
+          </header>
+          <h3 class="card__title" data-i18n="prod.other.t">Diğer Hammaddeler</h3>
+          <p class="card__desc" data-i18n="prod.other.d">Aradığınız spesifikasyonu listede bulamadınız mı? Talebinize özel kaynak buluruz.</p>
+          <ul class="card__specs mono">
+            <li data-i18n="prod.other.s1">Alüminyum oksit</li>
+            <li data-i18n="prod.other.s2">Refrakter malzeme</li>
+            <li data-i18n="prod.other.s3">Özel tedarik</li>
+          </ul>
+          <a href="#contact" class="card__link" data-i18n="prod.cta">Teklif alın →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY ============ -->
+  <section class="why" id="why">
+    <div class="wrap why__grid">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="why.eyebrow">// NEDEN ALÜMTAŞ</p>
+        <h2 class="h2" data-i18n="why.title">Tedarik zincirinizde tek bir zayıf halka bırakmıyoruz</h2>
+      </div>
+
+      <div class="feats">
+        <div class="feat reveal">
+          <svg viewBox="0 0 24 24" class="feat__ic" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+          <h3 data-i18n="why.f1.t">Global Tedarik Ağı</h3>
+          <p data-i18n="why.f1.d">Birden fazla kıtada onaylı üretici ile çalışır, arz riskini dağıtırız.</p>
+        </div>
+        <div class="feat reveal">
+          <svg viewBox="0 0 24 24" class="feat__ic" aria-hidden="true"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3 data-i18n="why.f2.t">Kalite Güvencesi</h3>
+          <p data-i18n="why.f2.d">Her partide analiz sertifikası; spesifikasyon dışı malzeme sevk etmeyiz.</p>
+        </div>
+        <div class="feat reveal">
+          <svg viewBox="0 0 24 24" class="feat__ic" aria-hidden="true"><path d="M3 11.5V4h7.5L21 14.5 14.5 21z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg>
+          <h3 data-i18n="why.f3.t">Rekabetçi Fiyat</h3>
+          <p data-i18n="why.f3.d">Doğrudan üreticiden alım ve hacim avantajıyla maliyetinizi düşürürüz.</p>
+        </div>
+        <div class="feat reveal">
+          <svg viewBox="0 0 24 24" class="feat__ic" aria-hidden="true"><path d="M3 16V8l9-5 9 5v8l-9 5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+          <h3 data-i18n="why.f4.t">Zamanında Teslimat</h3>
+          <p data-i18n="why.f4.d">Planlı lojistik ve stok yönetimiyle üretim takviminize uyum sağlarız.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap contact__grid">
+      <div class="contact__info reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow">// İLETİŞİM</p>
+        <h2 class="h2" data-i18n="contact.title">Bir sonraki sevkiyatınızı konuşalım</h2>
+        <p class="contact__lead" data-i18n="contact.lead">
+          İhtiyacınız olan malzeme, miktar ve teslim noktasını iletin; 24 saat
+          içinde fiyat ve termin ile dönüş yapalım.
+        </p>
+        <ul class="contact__list">
+          <li>
+            <span class="mono">ADRES</span>
+            <span data-i18n="contact.addr">İstanbul, Türkiye</span>
+          </li>
+          <li>
+            <span class="mono">TEL</span>
+            <a href="tel:+900000000000">+90 (000) 000 00 00</a>
+          </li>
+          <li>
+            <span class="mono">E-POSTA</span>
+            <a href="mailto:info@alumtasmetal.com">info@alumtasmetal.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" id="quoteForm" novalidate>
+        <div class="field">
+          <label for="name" data-i18n="form.name">Ad Soyad / Firma</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="field">
+          <label for="email" data-i18n="form.email">E-posta</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="material" data-i18n="form.material">İlgilendiğiniz malzeme</label>
+          <input type="text" id="material" name="material" placeholder="Al 99.7, SiC 90%, FeSi..." />
+        </div>
+        <div class="field">
+          <label for="msg" data-i18n="form.msg">Miktar &amp; notlar</label>
+          <textarea id="msg" name="msg" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn--hot btn--block" data-i18n="form.submit">Teklif talebini gönder</button>
+        <p class="form__hint" id="formHint" role="status" data-i18n="form.hint">
+          Gönder'e bastığınızda e-posta uygulamanız hazır bir mesajla açılır.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <div class="foot__brand">
+        <span class="brand__text">ALÜMTAŞ<span class="brand__sub">METAL</span></span>
+        <p data-i18n="foot.tag">Alüminyum · Silisyum Karbür · Endüstriyel Hammadde</p>
+      </div>
+      <nav class="foot__links">
+        <a href="#about" data-i18n="nav.about">Hakkımızda</a>
+        <a href="#products" data-i18n="nav.products">Ürünler</a>
+        <a href="#why" data-i18n="nav.why">Neden Biz</a>
+        <a href="#contact" data-i18n="nav.contact">İletişim</a>
+      </nav>
+      <p class="foot__copy">© <span id="year">2026</span> ALÜMTAŞ METAL LİMİTED ŞİRKETİ</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
